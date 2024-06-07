@@ -8,3 +8,5 @@
 	email = tim.vaneerdewegh@uantwerpen.be
 [pull]
 	rebase = true
+[core]
+	editor = nvim
