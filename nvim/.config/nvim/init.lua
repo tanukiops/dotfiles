@@ -539,6 +539,24 @@ require('lazy').setup({
           end,
         },
       }
+      require('lspconfig').yamlls.setup {
+        settings = {
+          yaml = {
+            schemas = {
+              kubernetes = '*.yaml',
+              ['http://json.schemastore.org/ansible-stable-2.9'] = 'roles/tasks/*.{yml,yaml}',
+              ['http://json.schemastore.org/ansible-playbook'] = 'ansible/systemen/*.{yml,yaml}',
+              ['http://json.schemastore.org/ansible-inventory'] = 'ansible/inventory/*.{yml,yaml}',
+              ['http://json.schemastore.org/chart'] = 'Chart.{yml,yaml}',
+              ['http://json.schemastore.org/kustomization'] = 'kustomization.{yml,yaml}',
+              ['https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json'] = '*gitlab-ci*.{yml,yaml}',
+              ['https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.1/schema.json'] = '*api*.{yml,yaml}',
+              ['https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json'] = '*docker-compose*.{yml,yaml}',
+              ['https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json'] = '*flow*.{yml,yaml}',
+            },
+          },
+        },
+      }
     end,
   },
 
@@ -751,7 +769,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'go', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'go', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'yaml' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
