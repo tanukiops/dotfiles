@@ -11,6 +11,25 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/opt/go@1.21/bin:$PATH"
+
+#set custom directory's 
+
+export UA="$HOME/UA"
+export KUBEWS="$UA/kubernetes"
+export GITOPS="$KUBEWS/argocd"
+export SCRIPTS="$UA/scripts"
+
+#cd aliases
+alias cdgitops="cd $GITOPS"
+alias cdscripts="cd $SCRIPTS"
+alias cdkube="cd $KUBEWS"
+alias cdwork="cd $UA"
+#script aliases
+alias zet="$SCRIPTS/zettel.sh"
+#nvim aliases
+alias v="nvim"
+alias vtea="cd $GITOPS/tstecampus-applications/ && nvim"
+alias vtec="cd $GITOPS/tstecampus-core/ && nvim"
 ### Put functions here
 
 kube_sh(){
