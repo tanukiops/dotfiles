@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
 #set theme (I think starship will override this)
 ZSH_THEME="robbyrussell"
 plugins=(git kubectl fzf)
@@ -30,6 +31,10 @@ alias zet="$SCRIPTS/zettel.sh"
 alias v="nvim"
 alias vtea="cd $GITOPS/tstecampus-applications/ && nvim"
 alias vtec="cd $GITOPS/tstecampus-core/ && nvim"
+alias vtua="cd $GITOPS/tstuasys-applications/ && nvim"
+alias vtuc="cd $GITOPS/tstuasys-core/ && nvim"
+alias vua="cd $GITOPS/uasys-apps-applications/ && nvim"
+alias vuc="cd $GITOPS/uasys-apps-core/ && nvim"
 ### Put functions here
 
 kube_sh(){
