@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=nvim
-#set theme (I think starship will override this)
+##set theme (I think starship will override this)
 ZSH_THEME="robbyrussell"
 plugins=(git kubectl fzf)
 #add auto completions to function path, put all autocompletions in this folder.
