@@ -17,32 +17,30 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 #set custom directory's 
 
-export UA="$HOME/UA"
-export KUBEWS="$UA/kubernetes"
-export GITOPS="$KUBEWS/argocd"
-export SCRIPTS="$UA/scripts"
-export HOMELAB="$HOME/Documents/homelab"
+export UA="$HOME/repos/gitlab.uantwerpen.be"
+export KUBEWS="$UA/systemen/kubernetes"
+export GITOPS="$KUBEWS/clusters"
+export HOMELAB="$HOME/repos/github.com/tanukiops"
 #cd aliases
-alias cdhomelab="cd $HOMELAB"
+alias cdgithub="cd $HOMELAB"
 alias cdgitops="cd $GITOPS"
-alias cdscripts="cd $SCRIPTS"
 alias cdkube="cd $KUBEWS"
 alias cdwork="cd $UA"
-alias cdansible="cd $UA/ansible/ua/"
+alias cdansible="cd $UA/systemen/ansible/"
+alias cddot="cd ~/.dotfiles"
 #script aliases
-alias zet="$SCRIPTS/zettel.sh"
 #terraform
 alias cfapply="tofu apply -var-file .tfvars"
 alias cfplan="tofu plan -var-file .tfvars"
 alias tf="sudo tofu"
 #nvim aliases
 alias v="nvim"
-alias vtea="cd $GITOPS/tstecampus-applications/ && nvim"
-alias vtec="cd $GITOPS/tstecampus-core/ && nvim"
-alias vtua="cd $GITOPS/tstuasys-applications/ && nvim"
-alias vtuc="cd $GITOPS/tstuasys-core/ && nvim"
-alias vua="cd $GITOPS/uasys-apps-applications/ && nvim"
-alias vuc="cd $GITOPS/uasys-apps-core/ && nvim"
+alias vtea="cd $GITOPS/tstecampus/tstecampus-applications/ && nvim"
+alias vtec="cd $GITOPS/tstecampus/tstecampus-core/ && nvim"
+alias vtua="cd $GITOPS/tstuasys/tstuasys-applications/ && nvim"
+alias vtuc="cd $GITOPS/tstuasys/tstuasys-core/ && nvim"
+alias vua="cd $GITOPS/uasys-apps/uasys-apps-applications/ && nvim"
+alias vuc="cd $GITOPS/uasys-apps/uasys-apps-core/ && nvim"
 ### Put functions here
 
 kube_sh(){
