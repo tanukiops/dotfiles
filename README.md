@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles are managed by <https://www.chezmoi.io/>
+Dotfiles are managed by <https://www.chezmoi.io/> :)
 
 ```bash
 brew install chezmoi

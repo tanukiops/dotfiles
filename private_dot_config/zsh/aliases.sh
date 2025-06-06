@@ -1,3 +1,3 @@
 alias vim=nvim
-alias tmuxconf="nvim ~/.config/tmux"
-alias zshconf="nvim ~/.config/zsh"
+alias tmuxconf="chezmoi edit ~/.config/tmux"
+alias zshconf="chezmoi edit ~/.config/zsh"
