@@ -13,5 +13,7 @@ disabled = false
 format = '[context: $symbol$context( \($namespace\))]($style) '
 contexts = [
   { context_pattern = "*kind*", style = "cyan bold", symbol = "📚 " },
+  { context_pattern = "*prod*", style = "red bold", symbol = "PROD 📚 " },
+  { context_pattern = "*cp*", style = "yellow bold", symbol = "CP 📚 " },
 ]
 
