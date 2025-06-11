@@ -10,7 +10,7 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 
 [kubernetes]
 disabled = false
-format = '[context: $symbol$cluster( \($namespace\))]($style) '
+format = '[context: $symbol$context( \($namespace\))]($style) '
 contexts = [
   { context_pattern = "*kind*", style = "cyan bold", symbol = "📚 " },
   { context_pattern = "*prod*", style = "red bold", symbol = "PROD 📚 " },
