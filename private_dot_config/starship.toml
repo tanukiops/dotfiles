@@ -12,7 +12,7 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 disabled = false
 format = '[context: $symbol$context( \($namespace\))]($style) '
 contexts = [
-  { context_pattern = "*kind*", style = "cyan bold", symbol = "📚 " },
-  { context_pattern = "*prod*", style = "red bold", symbol = "PROD 📚 " },
-  { context_pattern = "*cp*", style = "yellow bold", symbol = "CP 📚 " },
+  { context_pattern = "kind", style = "cyan bold", symbol = "📚 " },
+  { context_pattern = "prod", style = "red bold", symbol = "PROD 📚 " },
+  { context_pattern = "cp", style = "yellow bold", symbol = "CP 📚 " },
 ]
