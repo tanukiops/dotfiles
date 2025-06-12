@@ -40,7 +40,7 @@ function tunnel() {
 }
 
 function dauth() {
-  DAUTH_USERNAME="vane528"
-  DAUTH_PASSWORD=$(bw get password vane528)
+  export DAUTH_USERNAME="vane528"
+  export DAUTH_PASSWORD=$(bw get password vane528)
   devutil dauth
 }
