@@ -38,3 +38,9 @@ function tunnel() {
   fi
   ~/workspace/dsh-k8s-work/scripts/kubectx-tunnel.sh --name $name
 }
+
+function dauth() {
+  DAUTH_USERNAME="vane528"
+  DAUTH_PASSWORD=$(bw get password vane528)
+  devutil dauth
+}
