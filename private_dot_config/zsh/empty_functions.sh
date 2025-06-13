@@ -5,5 +5,5 @@ function tunnel() {
 function dauth() {
   export DAUTH_USERNAME="vane528"
   export DAUTH_PASSWORD=$(bw get password vane528)
-  devutil dauth
+  /home/tim/.local/share/mise/installs/devutil/0.10.6/bin/devutil dauth
 }
