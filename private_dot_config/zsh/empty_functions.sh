@@ -3,9 +3,9 @@ function tunnel() {
 }
 
 function dauth() {
-  bw_output=$(bw get item vane528)
+  bw_session=$(bw unlock --raw)
   export DAUTH_USERNAME="vane528"
-  export DAUTH_PASSWORD=$(echo $bw_output | jq '.password')
-  export DAUTH_MFA=$(echo $bw_output | jq '.totp')
+  export DAUTH_PASSWORD=$(bw get password $DAUTH_USERNAME --session $bw_session)
+  export DAUTH_MFA=$(bw get totp $DAUTH_USERNAME --session $bw_session)
   /home/tim/.local/share/mise/installs/devutil/0.10.6/bin/devutil dauth
 }
