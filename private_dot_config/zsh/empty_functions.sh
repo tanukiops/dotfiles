@@ -7,5 +7,5 @@ function dauth() {
   export DAUTH_USERNAME="vane528"
   export DAUTH_PASSWORD=$(bw get password $DAUTH_USERNAME --session $bw_session)
   export DAUTH_MFA=$(bw get totp $DAUTH_USERNAME --session $bw_session)
-  /home/tim/.local/share/mise/installs/devutil/0.10.6/bin/devutil dauth
+  /home/tim/.local/share/mise/installs/devutil/0.10.7/bin/devutil dauth
 }
