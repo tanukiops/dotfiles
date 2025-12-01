@@ -5,3 +5,4 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.krew/bin:$PATH
 export GOPRIVATE=github.com/Klarrio/*
 export EDITOR=nvim
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/vault-password
+export HARBOR_PASSWORD=$(pass dsh/harbor)
