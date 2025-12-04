@@ -2,7 +2,7 @@ function tunnel() {
   /home/tim/workspace/tools-devutil/dist/devutil ktunnel
 }
 function kadmin() {
-  /home/tim/workspace/tools-devutil/dist/devutil kupdate --dev -c $(kubectl config current-context)
+  /home/tim/workspace/tools-devutil/dist/devutil kupdate --dev --name $(kubectl config current-context)
 }
 
 function dauth() {
