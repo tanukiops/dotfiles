@@ -5,7 +5,7 @@ function kadmin() {
   /home/tim/workspace/tools-devutil/dist/devutil kupdate --dev --name $(kubectl config current-context)
 }
 function kconnect() {
-  kubie ctx $(yq -r '. | keys[] ' ~/workspace/dsh-k8s-work/scripts/clusters.yaml | fzf)
+  kubie ctx $(yq -r '. | keys[] ' /home/tim/workspace/dsh-k8s-work/scripts/clusters.yaml | fzf)
 }
 
 function dauth() {
