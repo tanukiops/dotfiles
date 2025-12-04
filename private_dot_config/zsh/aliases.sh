@@ -76,4 +76,4 @@ alias frsh='flux resume source helm'
 alias frso='flux resume source oci'
 
 # Tim
-alias mods="OPENAI_API_KEY=$(pass klarrio/ai) mods"
+alias mods="OPENAI_API_KEY=$(pass klarrio/openai) mods"
