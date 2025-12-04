@@ -1,6 +1,9 @@
 function tunnel() {
   /home/tim/workspace/tools-devutil/dist/devutil ktunnel
 }
+function kadmin() {
+  /home/tim/workspace/tools-devutil/dist/devutil kupdate --dev -c $(kubectl config current-context)
+}
 
 function dauth() {
   bw_session=$(bw unlock --raw)
