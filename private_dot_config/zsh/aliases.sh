@@ -74,3 +74,6 @@ alias frsc='flux resume source chart'
 alias frsg='flux resume source git'
 alias frsh='flux resume source helm'
 alias frso='flux resume source oci'
+
+# Tim
+alias mods="OPENAI_API_KEY=$(pass klarrio/ai) mods"
