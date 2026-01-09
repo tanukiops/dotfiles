@@ -1,5 +1,5 @@
 function tunnel() {
-  /home/tim/.local/share/mise/installs/devutil/0.14.0/bin/devutil ktunnel --name "k8s-dev-aws-lz-dsh"
+  /home/tim/.local/share/mise/installs/devutil/0.14.0/bin/devutil tunnel --name "k8s-dev-aws-lz-dsh"
 }
 function kadmin() {
   /home/tim/.local/share/mise/installs/devutil/0.14.0/bin/devutil kupdate --dev --name $(kubectl config current-context)
