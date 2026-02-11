@@ -77,3 +77,4 @@ alias frso='flux resume source oci'
 
 # Tim
 # alias mods="OPENAI_API_KEY=$(pass klarrio/openai) mods"
+alias ,platform-name="kubectl get configmap -n flux-system dsh-platform-config -o json | yq -r '.data["values.yaml"]' | yq '.platform.name'"
