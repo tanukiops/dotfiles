@@ -9,9 +9,8 @@ function kconnect() {
 }
 
 function platform-api() {
-
   NS=${NS:-dsh}
-  SVC=${SVC:-platform-api-rest}
+  SVC=${SVC:-"platform-api-rest"}
   PORTS=${PORTS:-9000:9000}
 
   trap 'kill 0' EXIT INT TERM # take the kubectl child down with us
